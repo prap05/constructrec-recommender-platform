@@ -1,0 +1,89 @@
+{
+  "name": "ConstructRec_Daily_Ingestion_Pipeline",
+  "properties": {
+    "description": "Azure Data Factory pipeline for ingesting construction vendor data and triggering recommender model retraining.",
+    "activities": [
+      {
+        "name": "Copy_REST_API_to_ADLS_Bronze",
+        "type": "Copy",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.00:30:00",
+          "retry": 2,
+          "retryIntervalInSeconds": 30
+        },
+        "typeProperties": {
+          "source": {
+            "type": "RestSource",
+            "httpRequestTimeout": "00:01:40",
+            "requestInterval": "00.00:00:010"
+          },
+          "sink": {
+            "type": "JsonSink",
+            "storeSettings": {
+              "type": "AzureBlobFSWriteSettings"
+            },
+            "formatSettings": {
+              "type": "JsonWriteSettings"
+            }
+          },
+          "enableStaging": false
+        },
+        "inputs": [
+          {
+            "referenceName": "ds_procore_rest_api",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "ds_adls_bronze_json",
+            "type": "DatasetReference"
+          }
+        ]
+      },
+      {
+        "name": "Trigger_Azure_Function_Data_Validation",
+        "type": "AzureFunctionActivity",
+        "dependsOn": [
+          {
+            "activity": "Copy_REST_API_to_ADLS_Bronze",
+            "dependencyConditions": ["Succeeded"]
+          }
+        ],
+        "policy": {
+          "timeout": "0.00:10:00",
+          "retry": 1
+        },
+        "typeProperties": {
+          "functionName": "ValidateBronzePayload",
+          "method": "POST",
+          "body": {
+            "sourcePath": "@pipeline().parameters.bronzeFilePath",
+            "schemaValidationLevel": "STRICT"
+          }
+        }
+      },
+      {
+        "name": "Run_DBT_Transformations_Snowflake",
+        "type": "DatabricksNotebook",
+        "dependsOn": [
+          {
+            "activity": "Trigger_Azure_Function_Data_Validation",
+            "dependencyConditions": ["Succeeded"]
+          }
+        ],
+        "typeProperties": {
+          "notebookPath": "/Shared/dbt_runners/run_constructrec_dbt"
+        }
+      }
+    ],
+    "parameters": {
+      "bronzeFilePath": {
+        "type": "string",
+        "defaultValue": "raw/daily_extracts/"
+      }
+    },
+    "annotations": ["vConstruct", "DPR_Construction", "ETL", "ADF"]
+  }
+}

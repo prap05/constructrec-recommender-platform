@@ -1,0 +1,2332 @@
+[
+  {
+    "subcontractor_id": "SUB-0001",
+    "company_name": "Apex Electrical Specialties",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.94,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 32,
+    "active_crew_count": 35,
+    "certifications": [
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0002",
+    "company_name": "Pinnacle Roofing Builders",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.86,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 22,
+    "active_crew_count": 229,
+    "certifications": [
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0003",
+    "company_name": "Precision Concrete Builders",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 1.07,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 5,
+    "active_crew_count": 102,
+    "certifications": [
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0004",
+    "company_name": "Sterling Roofing Systems",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 9,
+    "active_crew_count": 144,
+    "certifications": [
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0005",
+    "company_name": "Summit Fire Contractors",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.82,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 25,
+    "active_crew_count": 103,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0006",
+    "company_name": "Sterling Electrical Solutions",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.82,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 30,
+    "active_crew_count": 184,
+    "certifications": [
+      "BIM-LOD400",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0007",
+    "company_name": "Optima Building Solutions",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 15,
+    "active_crew_count": 69,
+    "certifications": [
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Building Automation & Controls"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0008",
+    "company_name": "Integra Plumbing Group",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.86,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 28,
+    "active_crew_count": 145,
+    "certifications": [
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0009",
+    "company_name": "Paramount HVAC Systems",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.93,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 21,
+    "active_crew_count": 146,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0010",
+    "company_name": "Paramount Building Group",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 17,
+    "active_crew_count": 23,
+    "certifications": [
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Building Automation & Controls"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0011",
+    "company_name": "Paramount Concrete Contractors",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 11,
+    "active_crew_count": 189,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0012",
+    "company_name": "Vanguard Concrete Engineering",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.75,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 20,
+    "active_crew_count": 178,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0013",
+    "company_name": "Paramount Concrete Contractors",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.95,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 25,
+    "active_crew_count": 120,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Concrete & Foundations"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0014",
+    "company_name": "Titan Fire Solutions",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.8,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 32,
+    "active_crew_count": 205,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0015",
+    "company_name": "Sterling Building Specialties",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.86,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 7,
+    "active_crew_count": 28,
+    "certifications": [
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Building Automation & Controls"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0016",
+    "company_name": "Allied Concrete Builders",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 1.02,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 18,
+    "active_crew_count": 214,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0017",
+    "company_name": "Sterling Plumbing Contractors",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 24,
+    "active_crew_count": 222,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0018",
+    "company_name": "Beacon HVAC Solutions",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 1.2,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 18,
+    "active_crew_count": 67,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0019",
+    "company_name": "Sterling Fire Builders",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.94,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 16,
+    "active_crew_count": 55,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0020",
+    "company_name": "Paramount Electrical Builders",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 16,
+    "active_crew_count": 79,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0021",
+    "company_name": "Vanguard Fire Engineering",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.87,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 11,
+    "active_crew_count": 230,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0022",
+    "company_name": "Beacon Electrical Specialties",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 22,
+    "active_crew_count": 95,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0023",
+    "company_name": "Summit Structural Group",
+    "trade": "Structural Steel & Precast",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.99,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 13,
+    "active_crew_count": 245,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Structural Steel & Precast",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0024",
+    "company_name": "Summit Plumbing Engineering",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 31,
+    "active_crew_count": 149,
+    "certifications": [
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0025",
+    "company_name": "Precision Cleanroom Solutions",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.86,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 26,
+    "active_crew_count": 165,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0026",
+    "company_name": "Omega Electrical Builders",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 1.02,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 8,
+    "active_crew_count": 113,
+    "certifications": [
+      "ASHE-Healthcare"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0027",
+    "company_name": "Vanguard Roofing Contractors",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.69,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 6,
+    "active_crew_count": 115,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0028",
+    "company_name": "Sterling Cleanroom Specialties",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 6,
+    "active_crew_count": 15,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0029",
+    "company_name": "Precision Electrical Systems",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.77,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 30,
+    "active_crew_count": 151,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0030",
+    "company_name": "Benchmark Concrete Systems",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 29,
+    "active_crew_count": 56,
+    "certifications": [
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0031",
+    "company_name": "Precision HVAC Solutions",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.71,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 20,
+    "active_crew_count": 66,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0032",
+    "company_name": "Paramount Cleanroom Engineering",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 7,
+    "active_crew_count": 236,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0033",
+    "company_name": "Dynamic Plumbing Systems",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.92,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 32,
+    "active_crew_count": 50,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0034",
+    "company_name": "Summit Fire Engineering",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.76,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 10,
+    "active_crew_count": 201,
+    "certifications": [
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0035",
+    "company_name": "Apex Electrical Engineering",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 33,
+    "active_crew_count": 199,
+    "certifications": [
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0036",
+    "company_name": "Precision Concrete Builders",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.92,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 31,
+    "active_crew_count": 42,
+    "certifications": [
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0037",
+    "company_name": "Dynamic Cleanroom Systems",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.83,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 29,
+    "active_crew_count": 106,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0038",
+    "company_name": "Paramount HVAC Builders",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.71,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 33,
+    "active_crew_count": 239,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0039",
+    "company_name": "Precision Building Group",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 16,
+    "active_crew_count": 247,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0040",
+    "company_name": "Integra Cleanroom Group",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.72,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 9,
+    "active_crew_count": 214,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0041",
+    "company_name": "Vanguard Building Systems",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.72,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 13,
+    "active_crew_count": 186,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0042",
+    "company_name": "Apex Roofing Specialties",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 1.23,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 30,
+    "active_crew_count": 132,
+    "certifications": [
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0043",
+    "company_name": "Optima Building Group",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.92,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 33,
+    "active_crew_count": 200,
+    "certifications": [
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0044",
+    "company_name": "Beacon Electrical Systems",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.7,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 33,
+    "active_crew_count": 53,
+    "certifications": [
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0045",
+    "company_name": "Pinnacle Fire Builders",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.65,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 20,
+    "active_crew_count": 201,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0046",
+    "company_name": "Sterling Electrical Specialties",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.88,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 5,
+    "active_crew_count": 234,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0047",
+    "company_name": "Paramount Concrete Specialties",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.86,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 15,
+    "active_crew_count": 232,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0048",
+    "company_name": "Dynamic Cleanroom Contractors",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.92,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 26,
+    "active_crew_count": 82,
+    "certifications": [
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0049",
+    "company_name": "Pinnacle Plumbing Solutions",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 9,
+    "active_crew_count": 38,
+    "certifications": [
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0050",
+    "company_name": "Integra Drywall Solutions",
+    "trade": "Drywall & Framing",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.8,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 5,
+    "active_crew_count": 212,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Drywall & Framing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0051",
+    "company_name": "Allied Roofing Contractors",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 1.03,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 12,
+    "active_crew_count": 138,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0052",
+    "company_name": "Titan Roofing Specialties",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.83,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 19,
+    "active_crew_count": 107,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0053",
+    "company_name": "Vanguard Roofing Contractors",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.83,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 29,
+    "active_crew_count": 209,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0054",
+    "company_name": "Optima Cleanroom Engineering",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 23,
+    "active_crew_count": 110,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0055",
+    "company_name": "Apex HVAC Contractors",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.93,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 14,
+    "active_crew_count": 234,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0056",
+    "company_name": "Allied Roofing Engineering",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.6,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 21,
+    "active_crew_count": 165,
+    "certifications": [
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0057",
+    "company_name": "Optima Structural Solutions",
+    "trade": "Structural Steel & Precast",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 1.1,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 19,
+    "active_crew_count": 104,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Structural Steel & Precast",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0058",
+    "company_name": "Apex Structural Contractors",
+    "trade": "Structural Steel & Precast",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.93,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 23,
+    "active_crew_count": 74,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Structural Steel & Precast"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0059",
+    "company_name": "Paramount Concrete Solutions",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 26,
+    "active_crew_count": 23,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0060",
+    "company_name": "Beacon Concrete Systems",
+    "trade": "Concrete & Foundations",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.94,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 22,
+    "active_crew_count": 62,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0061",
+    "company_name": "Omega Fire Specialties",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 4,
+    "active_crew_count": 166,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0062",
+    "company_name": "Beacon Fire Solutions",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 20,
+    "active_crew_count": 214,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0063",
+    "company_name": "Beacon Cleanroom Group",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 19,
+    "active_crew_count": 231,
+    "certifications": [
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0064",
+    "company_name": "Summit Fire Contractors",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Austin, TX",
+    "safety_emr": 1.01,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 32,
+    "active_crew_count": 160,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0065",
+    "company_name": "Summit Roofing Solutions",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.9,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 19,
+    "active_crew_count": 203,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0066",
+    "company_name": "Pinnacle HVAC Builders",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.73,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 4,
+    "active_crew_count": 82,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0067",
+    "company_name": "Optima Plumbing Solutions",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.79,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 11,
+    "active_crew_count": 149,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0068",
+    "company_name": "Apex Fire Builders",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.74,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 4,
+    "active_crew_count": 190,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0069",
+    "company_name": "Pinnacle Fire Specialties",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 17,
+    "active_crew_count": 172,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0070",
+    "company_name": "Titan Roofing Specialties",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.79,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 16,
+    "active_crew_count": 65,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0071",
+    "company_name": "Vanguard Roofing Systems",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.91,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 33,
+    "active_crew_count": 111,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0072",
+    "company_name": "Optima Fire Group",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 4,
+    "active_crew_count": 211,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0073",
+    "company_name": "Benchmark Plumbing Specialties",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.88,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 20,
+    "active_crew_count": 31,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0074",
+    "company_name": "Dynamic Roofing Group",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.69,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 33,
+    "active_crew_count": 235,
+    "certifications": [
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0075",
+    "company_name": "Optima Cleanroom Specialties",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.95,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 8,
+    "active_crew_count": 38,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0076",
+    "company_name": "Omega Concrete Systems",
+    "trade": "Concrete & Foundations",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.84,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 17,
+    "active_crew_count": 195,
+    "certifications": [
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0077",
+    "company_name": "Benchmark Building Group",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.92,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 32,
+    "active_crew_count": 227,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0078",
+    "company_name": "Allied Concrete Specialties",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 4,
+    "active_crew_count": 81,
+    "certifications": [
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0079",
+    "company_name": "Integra HVAC Group",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.91,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 29,
+    "active_crew_count": 81,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0080",
+    "company_name": "Optima HVAC Systems",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.73,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 27,
+    "active_crew_count": 128,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0081",
+    "company_name": "Benchmark Roofing Contractors",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 20,
+    "active_crew_count": 118,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0082",
+    "company_name": "Dynamic Roofing Systems",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.74,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 14,
+    "active_crew_count": 190,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0083",
+    "company_name": "Omega Cleanroom Group",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.66,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 21,
+    "active_crew_count": 167,
+    "certifications": [
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0084",
+    "company_name": "Pinnacle Building Specialties",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.94,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 31,
+    "active_crew_count": 149,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0085",
+    "company_name": "Pinnacle Roofing Systems",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 1.05,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 17,
+    "active_crew_count": 158,
+    "certifications": [
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0086",
+    "company_name": "Pinnacle Concrete Engineering",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.88,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 22,
+    "active_crew_count": 229,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0087",
+    "company_name": "Precision HVAC Group",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 34,
+    "active_crew_count": 100,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0088",
+    "company_name": "Sterling Plumbing Engineering",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.83,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 29,
+    "active_crew_count": 77,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0089",
+    "company_name": "Omega Roofing Builders",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.83,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 18,
+    "active_crew_count": 68,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0090",
+    "company_name": "Apex Building Engineering",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.95,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 8,
+    "active_crew_count": 239,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0091",
+    "company_name": "Benchmark Structural Builders",
+    "trade": "Structural Steel & Precast",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.82,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 10,
+    "active_crew_count": 210,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Structural Steel & Precast",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0092",
+    "company_name": "Vanguard Fire Group",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 23,
+    "active_crew_count": 108,
+    "certifications": [
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0093",
+    "company_name": "Summit Fire Systems",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 1.14,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 16,
+    "active_crew_count": 128,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0094",
+    "company_name": "Titan Fire Group",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 33,
+    "active_crew_count": 161,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0095",
+    "company_name": "Summit HVAC Systems",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.8,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 26,
+    "active_crew_count": 104,
+    "certifications": [
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0096",
+    "company_name": "Omega HVAC Solutions",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 24,
+    "active_crew_count": 76,
+    "certifications": [
+      "OSHA-30"
+    ],
+    "specialties": [
+      "HVAC & Mechanical"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0097",
+    "company_name": "Vanguard Plumbing Systems",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.94,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 29,
+    "active_crew_count": 136,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0098",
+    "company_name": "Dynamic Concrete Specialties",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.98,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 5,
+    "active_crew_count": 110,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0099",
+    "company_name": "Titan Structural Solutions",
+    "trade": "Structural Steel & Precast",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 1.09,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 24,
+    "active_crew_count": 143,
+    "certifications": [
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Structural Steel & Precast"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0100",
+    "company_name": "Paramount Plumbing Engineering",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.93,
+    "bonding_capacity_usd": 60000000,
+    "experience_years": 10,
+    "active_crew_count": 206,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0101",
+    "company_name": "Beacon Cleanroom Specialties",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 1.13,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 15,
+    "active_crew_count": 168,
+    "certifications": [
+      "BIM-LOD400",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0102",
+    "company_name": "Sterling Roofing Specialties",
+    "trade": "Roofing & Waterproofing",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 1.0,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 8,
+    "active_crew_count": 100,
+    "certifications": [
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Roofing & Waterproofing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0103",
+    "company_name": "Apex Drywall Group",
+    "trade": "Drywall & Framing",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.93,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 29,
+    "active_crew_count": 232,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Drywall & Framing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0104",
+    "company_name": "Allied Building Systems",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.97,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 10,
+    "active_crew_count": 114,
+    "certifications": [
+      "BIM-LOD400"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0105",
+    "company_name": "Benchmark Cleanroom Group",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.85,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 13,
+    "active_crew_count": 83,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0106",
+    "company_name": "Beacon Drywall Systems",
+    "trade": "Drywall & Framing",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.73,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 23,
+    "active_crew_count": 237,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Drywall & Framing",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0107",
+    "company_name": "Benchmark Building Builders",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Denver, CO",
+    "safety_emr": 1.25,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 19,
+    "active_crew_count": 38,
+    "certifications": [
+      "ASHE-Healthcare",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Building Automation & Controls",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0108",
+    "company_name": "Vanguard Drywall Engineering",
+    "trade": "Drywall & Framing",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 5,
+    "active_crew_count": 234,
+    "certifications": [
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Drywall & Framing",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0109",
+    "company_name": "Integra Cleanroom Builders",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 21,
+    "active_crew_count": 177,
+    "certifications": [
+      "BIM-LOD400",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "3D BIM Coordination"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0110",
+    "company_name": "Precision Electrical Specialties",
+    "trade": "Electrical & Low Voltage",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.9,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 4,
+    "active_crew_count": 203,
+    "certifications": [
+      "ASHE-Healthcare",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Electrical & Low Voltage",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0111",
+    "company_name": "Dynamic Building Group",
+    "trade": "Building Automation & Controls",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.96,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 4,
+    "active_crew_count": 182,
+    "certifications": [
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Building Automation & Controls"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0112",
+    "company_name": "Allied Fire Systems",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.89,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 15,
+    "active_crew_count": 43,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0113",
+    "company_name": "Allied Fire Builders",
+    "trade": "Fire Protection & Life Safety",
+    "primary_location": "Phoenix, AZ",
+    "safety_emr": 0.82,
+    "bonding_capacity_usd": 5000000,
+    "experience_years": 29,
+    "active_crew_count": 216,
+    "certifications": [
+      "ASHE-Healthcare",
+      "ISO-9001"
+    ],
+    "specialties": [
+      "Fire Protection & Life Safety",
+      "Infection Control & Medical Gas"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0114",
+    "company_name": "Titan Cleanroom Systems",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.9,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 5,
+    "active_crew_count": 129,
+    "certifications": [
+      "ISO-9001",
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0115",
+    "company_name": "Precision Concrete Specialties",
+    "trade": "Concrete & Foundations",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.81,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 16,
+    "active_crew_count": 89,
+    "certifications": [
+      "BIM-LOD400",
+      "Cleanroom-Certified"
+    ],
+    "specialties": [
+      "Concrete & Foundations",
+      "3D BIM Coordination",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0116",
+    "company_name": "Titan Plumbing Solutions",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "San Francisco, CA",
+    "safety_emr": 0.84,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 7,
+    "active_crew_count": 231,
+    "certifications": [
+      "ISO-9001",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0117",
+    "company_name": "Apex Cleanroom Specialties",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Seattle, WA",
+    "safety_emr": 0.8,
+    "bonding_capacity_usd": 2000000,
+    "experience_years": 12,
+    "active_crew_count": 166,
+    "certifications": [
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0118",
+    "company_name": "Optima HVAC Contractors",
+    "trade": "HVAC & Mechanical",
+    "primary_location": "Denver, CO",
+    "safety_emr": 0.99,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 20,
+    "active_crew_count": 113,
+    "certifications": [
+      "ASHE-Healthcare",
+      "BIM-LOD400",
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "HVAC & Mechanical",
+      "3D BIM Coordination",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0119",
+    "company_name": "Titan Plumbing Engineering",
+    "trade": "Plumbing & Industrial Piping",
+    "primary_location": "Raleigh-Durham, NC",
+    "safety_emr": 0.67,
+    "bonding_capacity_usd": 15000000,
+    "experience_years": 27,
+    "active_crew_count": 165,
+    "certifications": [
+      "OSHA-30",
+      "USGBC-LEED"
+    ],
+    "specialties": [
+      "Plumbing & Industrial Piping"
+    ],
+    "is_active": true
+  },
+  {
+    "subcontractor_id": "SUB-0120",
+    "company_name": "Beacon Cleanroom Engineering",
+    "trade": "Cleanroom MEP & Process Piping",
+    "primary_location": "Austin, TX",
+    "safety_emr": 0.73,
+    "bonding_capacity_usd": 35000000,
+    "experience_years": 8,
+    "active_crew_count": 26,
+    "certifications": [
+      "ASHE-Healthcare",
+      "Cleanroom-Certified",
+      "OSHA-30"
+    ],
+    "specialties": [
+      "Cleanroom MEP & Process Piping",
+      "Infection Control & Medical Gas",
+      "ISO Class 5/7 Cleanroom Assembly"
+    ],
+    "is_active": true
+  }
+]

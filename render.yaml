@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: constructrec-engine
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python src/pipeline.py"
+    startCommand: "gunicorn web_dashboard.app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

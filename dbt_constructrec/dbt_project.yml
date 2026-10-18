@@ -1,0 +1,23 @@
+name: 'constructrec_dbt'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which profile dbt uses for database connection
+profile: 'constructrec_profile'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  constructrec_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

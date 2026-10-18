@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstructRec | Enterprise AI Subcontractor Recommender & Data Pipeline</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #090d16;
+            --bg-secondary: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --bg-card-hover: rgba(30, 41, 59, 0.95);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(56, 189, 248, 0.3);
+            --accent-cyan: #38bdf8;
+            --accent-blue: #2563eb;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b 0%, var(--bg-primary) 45%, #020617 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.5;
+            padding-bottom: 60px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        }
+
+        .brand-info h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(90deg, #ffffff, #93c5fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-info p {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .header-tags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge-pill {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* KPI Banner */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-highlight);
+        }
+
+        .kpi-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .kpi-val {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .kpi-sub {
+            font-size: 11px;
+            color: var(--accent-emerald);
+            margin-top: 4px;
+        }
+
+        /* Main Workspace Grid */
+        .workspace-grid {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            gap: 28px;
+        }
+
+        @media (max-width: 1024px) {
+            .workspace-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Config / Query Panel */
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-header h2 {
+            font-size: 17px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-header p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .form-control {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 14px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 13px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 14px;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .switch-label-title {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .switch-label-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .btn-primary {
+            width: 100%;
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+        }
+
+        /* Results Display */
+        .results-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .meta-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 8px 4px;
+        }
+
+        .contractor-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contractor-card:hover {
+            border-color: var(--border-highlight);
+            background: var(--bg-card-hover);
+            transform: translateX(4px);
+        }
+
+        .contractor-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--accent-cyan);
+        }
+
+        .contractor-card.tier-1::before {
+            background: var(--accent-emerald);
+        }
+
+        .contractor-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .contractor-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rank-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 12px;
+            font-weight: 800;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .company-name {
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .match-score-pill {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-emerald);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            background: rgba(15, 23, 42, 0.4);
+            padding: 12px 14px;
+            border-radius: 10px;
+            margin: 14px 0;
+            font-size: 12px;
+        }
+
+        .spec-item .label {
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+
+        .spec-item .value {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .explanation-box {
+            background: rgba(56, 189, 248, 0.05);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 12px;
+            color: #bae6fd;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .cert-tag {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 6px;
+            margin-top: 6px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Tabs */
+        .tabs-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .tab-btn {
+            background: transparent;
+            color: var(--text-secondary);
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-cyan);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .arch-diagram {
+            background: #020617;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #38bdf8;
+            overflow-x: auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-container">
+            <div class="brand-logo">CR</div>
+            <div class="brand-info">
+                <h1>ConstructRec Engine</h1>
+                <p>Enterprise Subcontractor & Resource Recommender for DPR Construction / vConstruct</p>
+            </div>
+        </div>
+        <div class="header-tags">
+            <span class="badge-pill">Medallion Data Pipeline</span>
+            <span class="badge-pill">DBT & Airflow</span>
+            <span class="badge-pill">Hybrid SVD + TF-IDF</span>
+            <span class="badge-pill">Sub-50ms Latency</span>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- KPI Summary Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Certified Subcontractors</div>
+                <div class="kpi-val">{{ stats.contractors_count }}</div>
+                <div class="kpi-sub">{{ stats.tier1_safe_count }} Tier 1 (EMR &le; 0.85)</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Commercial Projects Tracked</div>
+                <div class="kpi-val">{{ stats.projects_count }}</div>
+                <div class="kpi-sub">Mission-critical & Healthcare</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Ranking Quality (NDCG@5)</div>
+                <div class="kpi-val">{{ stats.ndcg_score }}</div>
+                <div class="kpi-sub">Precision@5: {{ stats.precision_score }}</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Inference Latency (P50)</div>
+                <div class="kpi-val">{{ stats.avg_latency_ms }} ms</div>
+                <div class="kpi-sub">Real-time REST API</div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="switchTab('recommender-tab', this)">AI Recommendation Console</button>
+            <button class="tab-btn" onclick="switchTab('architecture-tab', this)">Data Engineering Architecture</button>
+            <button class="tab-btn" onclick="switchTab('dbt-tab', this)">DBT Models & Star Schema</button>
+        </div>
+
+        <!-- TAB 1: RECOMMENDER CONSOLE -->
+        <div id="recommender-tab" class="tab-content active">
+            <div class="workspace-grid">
+                
+                <!-- Query Config Panel -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Bid Award Request Setup</h2>
+                        <p>Configure project trade specifications and safety constraints</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Load from Existing DPR Project</label>
+                        <select id="preset-projects" class="form-control" onchange="loadPresetProject(this.value)">
+                            <option value="">-- Choose Existing Project Preset --</option>
+                            {% for p in projects %}
+                            <option value="{{ p.project_id }}" 
+                                    data-name="{{ p.project_name }}"
+                                    data-sector="{{ p.sector }}"
+                                    data-location="{{ p.location }}"
+                                    data-trade="{{ p.required_trade }}"
+                                    data-budget="{{ p.budget_usd }}"
+                                    data-safety="{{ p.strict_safety_mandate }}">
+                                {{ p.project_name }} ({{ p.location }})
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Name</label>
+                        <input type="text" id="proj-name" class="form-control" value="HyperScale Data Center Alpha Phase 1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Target Sector</label>
+                        <select id="proj-sector" class="form-control">
+                            {% for s in sectors %}
+                            <option value="{{ s }}" {% if 'Data Centers' in s %}selected{% endif %}>{{ s }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Required Trade Package</label>
+                        <select id="proj-trade" class="form-control">
+                            {% for t in trades %}
+                            <option value="{{ t }}" {% if 'HVAC' in t %}selected{% endif %}>{{ t }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Job Location</label>
+                        <select id="proj-location" class="form-control">
+                            {% for loc in locations %}
+                            <option value="{{ loc }}" {% if 'Austin' in loc %}selected{% endif %}>{{ loc }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Package Budget (USD)</label>
+                        <input type="number" id="proj-budget" class="form-control" value="25000000" step="1000000">
+                    </div>
+
+                    <div class="switch-group">
+                        <div>
+                            <div class="switch-label-title">Strict Safety Mandate</div>
+                            <div class="switch-label-sub">Requires EMR &le; 0.90 (Cleanrooms / Hospitals)</div>
+                        </div>
+                        <input type="checkbox" id="strict-safety" checked style="width: 20px; height: 20px; accent-color: var(--accent-cyan);">
+                    </div>
+
+                    <div class="switch-group">
+                        <div>
+                            <div class="switch-label-title">Filter by Safety Compliance</div>
+                            <div class="switch-label-sub">Exclude contractors exceeding EMR 1.05</div>
+                        </div>
+                        <input type="checkbox" id="apply-safety-filter" checked style="width: 20px; height: 20px; accent-color: var(--accent-emerald);">
+                    </div>
+
+                    <button class="btn-primary" onclick="triggerRecommendation()">
+                        <span>Generate AI Recommendations</span>
+                    </button>
+                </div>
+
+                <!-- Live Results Panel -->
+                <div>
+                    <div class="meta-bar">
+                        <span id="results-count-text">Top Recommended Subcontractors</span>
+                        <span id="latency-indicator" style="font-family: 'JetBrains Mono', monospace; color: var(--accent-cyan);">Inference: Ready</span>
+                    </div>
+
+                    <div id="results-list" class="results-container">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 2: DATA ENGINEERING ARCHITECTURE -->
+        <div id="architecture-tab" class="tab-content">
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="card-header">
+                    <h2>End-to-End Enterprise Medallion Data Architecture</h2>
+                    <p>Designed for scalable execution across Azure Data Factory, Snowflake, and Apache Airflow</p>
+                </div>
+                <div class="arch-diagram">
++---------------------------------------------------------------------------------------------------+
+|                                 CONSTRUCTREC DATA PLATFORM ARCHITECTURE                           |
++---------------------------------------------------------------------------------------------------+
+
+ [External REST APIs]        [Azure Data Factory]              [Storage / DWH Layer]
+ (Procore / Autodesk BIM) --> Copy Activity --> [Bronze] raw/daily_extracts/*.json
+                                   |
+                                   v
+                             [Airflow DAG]
+                             Task: validate_data_quality_bronze
+                                   |
+                                   v
+                             [DBT Transformations]
+                             models/staging/*.sql  --> [Silver] stg_subcontractors, stg_projects
+                             models/marts/*.sql    --> [Gold]   dim_subcontractors, dim_projects
+                                                                fct_project_evaluations
+                                                                features_recommender_mart (Feature Store)
+                                   |
+                  +----------------+----------------+
+                  |                                 |
+                  v                                 v
+          [MLOps Retraining]               [BI & Reporting]
+       - TF-IDF Content Vectorizer       - Power BI Star Schema
+       - TruncatedSVD Matrix Fact.       - DAX Measures: EMR Index, Confirmation Rate
+       - Business Safety Re-ranking      - Executive KPI Dashboards
+                  |
+                  v
+       [FastAPI Microservice]
+       POST /recommend (P50: 39ms)
+       Sub-50ms Inference for Project Managers
++---------------------------------------------------------------------------------------------------+
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Bronze Ingestion</div>
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 6px;">
+                        Schema-agnostic JSON lake ingestion preserving raw audit trails from Procore and BIM360 API hooks.
+                    </p>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Silver Transformation</div>
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 6px;">
+                        Deduplication, schema normalization, safety tier classification (EMR bins), and orphaned record purging.
+                    </p>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Gold Star Schema</div>
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 6px;">
+                        Conformed dimensional models (dims and facts) and Feature Mart calculating Bayesian ratings for cold start.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: DBT & POWER BI -->
+        <div id="dbt-tab" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h2>DBT Lineage & Power BI Star Schema Definition</h2>
+                    <p>Modular SQL transformations and conformed analytical data marts</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <h3 style="font-size: 14px; margin-bottom: 10px; color: var(--accent-cyan);">DBT Model Architecture</h3>
+                        <ul style="list-style: none; font-size: 13px; color: var(--text-secondary); line-height: 2;">
+                            <li><code>models/staging/stg_projects.sql</code> - Cleaned project dimension</li>
+                            <li><code>models/staging/stg_subcontractors.sql</code> - Subcontractors with safety tiering</li>
+                            <li><code>models/staging/stg_evaluations.sql</code> - Job evaluations with 1-5 rating checks</li>
+                            <li><code>models/marts/dim_subcontractors.sql</code> - Conformed dimension table</li>
+                            <li><code>models/marts/dim_projects.sql</code> - Project scope and budget dimension</li>
+                            <li><code>models/marts/fct_evaluations.sql</code> - Transactional fact table</li>
+                            <li><code>models/marts/features_recommender_mart.sql</code> - ML Feature Store with Bayesian Prior</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 14px; margin-bottom: 10px; color: var(--accent-emerald);">Power BI DAX Measures</h3>
+                        <div class="arch-diagram" style="padding: 12px; font-size: 11px;">
+// Power BI DAX: Average Safety EMR
+Avg Safety EMR = AVERAGE(dim_subcontractors[safety_emr])
+
+// Power BI DAX: AI Recommendation Acceptance Rate
+AI Confirmation Rate % = 
+DIVIDE(
+    CALCULATE(COUNTROWS(fct_project_evaluations), fct_project_evaluations[recommendation_confirmed] = TRUE()),
+    COUNTROWS(fct_project_evaluations),
+    0
+) * 100
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        function loadPresetProject(projId) {
+            if (!projId) return;
+            const opt = document.querySelector(`#preset-projects option[value="${projId}"]`);
+            if (opt) {
+                document.getElementById('proj-name').value = opt.getAttribute('data-name');
+                document.getElementById('proj-sector').value = opt.getAttribute('data-sector');
+                document.getElementById('proj-location').value = opt.getAttribute('data-location');
+                document.getElementById('proj-trade').value = opt.getAttribute('data-trade');
+                document.getElementById('proj-budget').value = opt.getAttribute('data-budget');
+                document.getElementById('strict-safety').checked = opt.getAttribute('data-safety') === 'True';
+                triggerRecommendation();
+            }
+        }
+
+        async function triggerRecommendation() {
+            const resultsList = document.getElementById('results-list');
+            const latencyIndicator = document.getElementById('latency-indicator');
+            
+            resultsList.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-secondary);">Querying ConstructRec Recommender Pipeline...</div>';
+            latencyIndicator.innerText = 'Calculating...';
+
+            const payload = {
+                project_name: document.getElementById('proj-name').value,
+                sector: document.getElementById('proj-sector').value,
+                location: document.getElementById('proj-location').value,
+                required_trade: document.getElementById('proj-trade').value,
+                budget_usd: parseInt(document.getElementById('proj-budget').value),
+                strict_safety_mandate: document.getElementById('strict-safety').checked,
+                apply_safety_filter: document.getElementById('apply-safety-filter').checked,
+                top_k: 5
+            };
+
+            try {
+                const resp = await fetch('/api/recommend', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(payload)
+                });
+                const res = await resp.json();
+                
+                if (res.success && res.data.recommendations) {
+                    latencyIndicator.innerText = `Inference: ${res.latency_ms} ms`;
+                    renderResults(res.data);
+                } else {
+                    resultsList.innerHTML = `<div style="padding: 20px; color: var(--accent-rose);">Error generating recommendations: ${res.error || 'Unknown error'}</div>`;
+                }
+            } catch (err) {
+                resultsList.innerHTML = `<div style="padding: 20px; color: var(--accent-rose);">Network error connecting to API: ${err}</div>`;
+            }
+        }
+
+        function renderResults(data) {
+            const container = document.getElementById('results-list');
+            container.innerHTML = '';
+            
+            if (data.recommendations.length === 0) {
+                container.innerHTML = '<div class="card" style="text-align: center; color: var(--text-secondary);">No eligible contractors met the safety and trade criteria. Consider toggling the safety filter.</div>';
+                return;
+            }
+
+            document.getElementById('results-count-text').innerText = 
+                `Top ${data.recommendations.length} Recommended Candidates (from ${data.compliant_candidates_count} compliant contractors)`;
+
+            data.recommendations.forEach(rec => {
+                const card = document.createElement('div');
+                card.className = `contractor-card ${rec.safety_emr <= 0.85 ? 'tier-1' : ''}`;
+
+                const certsHtml = rec.certifications.map(c => `<span class="cert-tag">${c}</span>`).join('');
+                const bondingFormatted = (rec.bonding_capacity_usd / 1000000).toFixed(1) + 'M';
+
+                card.innerHTML = `
+                    <div class="contractor-header">
+                        <div class="contractor-title-row">
+                            <div class="rank-badge">#${rec.rank}</div>
+                            <div>
+                                <div class="company-name">${rec.company_name}</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">ID: ${rec.subcontractor_id} &bull; ${rec.trade}</div>
+                            </div>
+                        </div>
+                        <div class="match-score-pill">${rec.scores.hybrid_match_pct}% Match</div>
+                    </div>
+
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <div class="label">Safety EMR</div>
+                            <div class="value" style="color: ${rec.safety_emr <= 0.85 ? 'var(--accent-emerald)' : 'var(--accent-amber)'};">
+                                ${rec.safety_emr.toFixed(2)} (${rec.safety_tier.split(' ')[0]})
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="label">Primary Location</div>
+                            <div class="value">${rec.primary_location}</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="label">Predicted Rating</div>
+                            <div class="value">${rec.scores.predicted_rating_5star.toFixed(1)} / 5.0 &#9733;</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="label">Bonding Capacity</div>
+                            <div class="value">$${bondingFormatted}</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="label">Experience</div>
+                            <div class="value">${rec.experience_years} Years</div>
+                        </div>
+                    </div>
+
+                    <div class="explanation-box">
+                        <span>&#128161;</span>
+                        <div><strong>AI Rationale:</strong> ${rec.explanation}</div>
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        ${certsHtml}
+                        ${rec.is_cold_start ? '<span class="cert-tag" style="background: rgba(245, 158, 11, 0.2); color: #fde68a;">Cold-Start Mitigated (Bayesian Prior)</span>' : ''}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Run default query on load
+        window.addEventListener('DOMContentLoaded', () => {
+            triggerRecommendation();
+        });
+    </script>
+</body>
+</html>

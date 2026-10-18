@@ -1,0 +1,61 @@
+project_id,project_name,sector,location,budget_usd,budget_millions,sq_footage,required_trade,bim_lod_required,strict_safety_mandate,status
+PRJ-0001,BioNexus Therapeutics Lab Phase 1,Higher Education & Research Centers,"Denver, CO",18000000,18.0,196246414,Structural Steel & Precast,LOD 300,False,Completed
+PRJ-0002,Skyline Health Pavilion Phase 1,Advanced Technology (Data Centers & Semis),"Seattle, WA",45000000,45.0,531987288,Electrical & Low Voltage,LOD 400,True,Completed
+PRJ-0003,HyperScale Data Center Alpha Phase 1,Advanced Technology (Data Centers & Semis),"Austin, TX",45000000,45.0,470396502,Fire Protection & Life Safety,LOD 400,True,Completed
+PRJ-0004,NextGen Semiconductor Fab Phase 1,Higher Education & Research Centers,"Seattle, WA",5000000,5.0,56337964,Concrete & Foundations,LOD 300,False,Completed
+PRJ-0005,Centennial Medical Center Phase 1,Higher Education & Research Centers,"Raleigh-Durham, NC",85000000,85.0,856528053,Building Automation & Controls,LOD 300,False,Completed
+PRJ-0006,Vertex Innovation Tower Phase 1,Biopharmaceutical & Lab Facilities,"Seattle, WA",18000000,18.0,215371969,Cleanroom MEP & Process Piping,LOD 400,True,Completed
+PRJ-0007,Apex Life Sciences Hub Phase 1,Higher Education & Research Centers,"Seattle, WA",85000000,85.0,740418515,Electrical & Low Voltage,LOD 300,False,Completed
+PRJ-0008,Quantum Compute Facility Phase 1,Advanced Technology (Data Centers & Semis),"Denver, CO",18000000,18.0,166294587,Electrical & Low Voltage,LOD 400,True,Completed
+PRJ-0009,Horizon Cancer Research Center Phase 1,Advanced Technology (Data Centers & Semis),"San Francisco, CA",85000000,85.0,774209530,Electrical & Low Voltage,LOD 400,True,Completed
+PRJ-0010,Prism Corporate Campus Phase 1,Advanced Technology (Data Centers & Semis),"Austin, TX",18000000,18.0,178736607,Plumbing & Industrial Piping,LOD 400,True,Completed
+PRJ-0011,St. Jude Outpatient Wing Phase 1,Commercial High-Rise & Corporate Campus,"Phoenix, AZ",5000000,5.0,43071197,Cleanroom MEP & Process Piping,LOD 300,False,Completed
+PRJ-0012,TerraWatt Battery Gigafactory Phase 1,Biopharmaceutical & Lab Facilities,"Denver, CO",85000000,85.0,978233002,Electrical & Low Voltage,LOD 400,True,Completed
+PRJ-0013,Metropolitan Surgical Hospital Phase 1,Advanced Technology (Data Centers & Semis),"Phoenix, AZ",5000000,5.0,56286990,Plumbing & Industrial Piping,LOD 400,True,Completed
+PRJ-0014,Cirrus Cloud Infrastructure Facility Phase 1,Advanced Technology (Data Centers & Semis),"Raleigh-Durham, NC",18000000,18.0,160230907,Concrete & Foundations,LOD 400,True,Completed
+PRJ-0015,Olympus Biologics Plant Phase 1,Advanced Technology (Data Centers & Semis),"Phoenix, AZ",150000000,150.0,1708981358,Electrical & Low Voltage,LOD 400,True,Completed
+PRJ-0016,BioNexus Therapeutics Lab Phase 2,Healthcare (Hospitals & Clinics),"San Francisco, CA",150000000,150.0,1691129997,Plumbing & Industrial Piping,LOD 400,False,Completed
+PRJ-0017,Skyline Health Pavilion Phase 2,Higher Education & Research Centers,"Phoenix, AZ",45000000,45.0,451666668,Building Automation & Controls,LOD 300,False,Completed
+PRJ-0018,HyperScale Data Center Alpha Phase 2,Biopharmaceutical & Lab Facilities,"Denver, CO",45000000,45.0,445895091,Cleanroom MEP & Process Piping,LOD 400,True,Completed
+PRJ-0019,NextGen Semiconductor Fab Phase 2,Higher Education & Research Centers,"Seattle, WA",18000000,18.0,184109098,Electrical & Low Voltage,LOD 300,False,Completed
+PRJ-0020,Centennial Medical Center Phase 2,Higher Education & Research Centers,"Austin, TX",18000000,18.0,209033642,Drywall & Framing,LOD 300,False,Completed
+PRJ-0021,Vertex Innovation Tower Phase 2,Higher Education & Research Centers,"Phoenix, AZ",18000000,18.0,154629488,Concrete & Foundations,LOD 300,False,Completed
+PRJ-0022,Apex Life Sciences Hub Phase 2,Higher Education & Research Centers,"Seattle, WA",45000000,45.0,532248838,Cleanroom MEP & Process Piping,LOD 300,False,Completed
+PRJ-0023,Quantum Compute Facility Phase 2,Higher Education & Research Centers,"Austin, TX",45000000,45.0,502689668,Structural Steel & Precast,LOD 300,False,Completed
+PRJ-0024,Horizon Cancer Research Center Phase 2,Commercial High-Rise & Corporate Campus,"Seattle, WA",45000000,45.0,485112744,Cleanroom MEP & Process Piping,LOD 300,False,Completed
+PRJ-0025,Prism Corporate Campus Phase 2,Advanced Technology (Data Centers & Semis),"Seattle, WA",45000000,45.0,451151885,Building Automation & Controls,LOD 400,True,Completed
+PRJ-0026,St. Jude Outpatient Wing Phase 2,Healthcare (Hospitals & Clinics),"Raleigh-Durham, NC",5000000,5.0,48589318,Drywall & Framing,LOD 400,False,Completed
+PRJ-0027,TerraWatt Battery Gigafactory Phase 2,Biopharmaceutical & Lab Facilities,"Denver, CO",18000000,18.0,159589792,Structural Steel & Precast,LOD 400,True,Completed
+PRJ-0028,Metropolitan Surgical Hospital Phase 2,Biopharmaceutical & Lab Facilities,"Raleigh-Durham, NC",5000000,5.0,54639289,Cleanroom MEP & Process Piping,LOD 400,True,Completed
+PRJ-0029,Cirrus Cloud Infrastructure Facility Phase 2,Commercial High-Rise & Corporate Campus,"Seattle, WA",18000000,18.0,155311919,Electrical & Low Voltage,LOD 300,False,Completed
+PRJ-0030,Olympus Biologics Plant Phase 2,Biopharmaceutical & Lab Facilities,"Phoenix, AZ",18000000,18.0,173366248,Fire Protection & Life Safety,LOD 400,True,Completed
+PRJ-0031,BioNexus Therapeutics Lab Phase 3,Higher Education & Research Centers,"Austin, TX",85000000,85.0,918153964,Roofing & Waterproofing,LOD 300,False,Completed
+PRJ-0032,Skyline Health Pavilion Phase 3,Commercial High-Rise & Corporate Campus,"Raleigh-Durham, NC",18000000,18.0,156414857,Roofing & Waterproofing,LOD 300,False,Completed
+PRJ-0033,HyperScale Data Center Alpha Phase 3,Biopharmaceutical & Lab Facilities,"Seattle, WA",5000000,5.0,55737755,Building Automation & Controls,LOD 400,True,Completed
+PRJ-0034,NextGen Semiconductor Fab Phase 3,Healthcare (Hospitals & Clinics),"San Francisco, CA",5000000,5.0,47173484,Structural Steel & Precast,LOD 400,False,Completed
+PRJ-0035,Centennial Medical Center Phase 3,Biopharmaceutical & Lab Facilities,"Raleigh-Durham, NC",45000000,45.0,521233342,Building Automation & Controls,LOD 400,True,Completed
+PRJ-0036,Vertex Innovation Tower Phase 3,Healthcare (Hospitals & Clinics),"Austin, TX",45000000,45.0,535770623,Plumbing & Industrial Piping,LOD 400,False,Completed
+PRJ-0037,Apex Life Sciences Hub Phase 3,Advanced Technology (Data Centers & Semis),"Denver, CO",5000000,5.0,45271617,Roofing & Waterproofing,LOD 400,True,Completed
+PRJ-0038,Quantum Compute Facility Phase 3,Healthcare (Hospitals & Clinics),"Seattle, WA",5000000,5.0,49639837,Concrete & Foundations,LOD 400,False,Completed
+PRJ-0039,Horizon Cancer Research Center Phase 3,Healthcare (Hospitals & Clinics),"Raleigh-Durham, NC",45000000,45.0,531662066,Structural Steel & Precast,LOD 400,False,Completed
+PRJ-0040,Prism Corporate Campus Phase 3,Commercial High-Rise & Corporate Campus,"Denver, CO",5000000,5.0,47607577,Cleanroom MEP & Process Piping,LOD 300,False,Completed
+PRJ-0041,St. Jude Outpatient Wing Phase 3,Commercial High-Rise & Corporate Campus,"Raleigh-Durham, NC",85000000,85.0,1014122778,Concrete & Foundations,LOD 300,False,Planning
+PRJ-0042,TerraWatt Battery Gigafactory Phase 3,Commercial High-Rise & Corporate Campus,"Seattle, WA",45000000,45.0,405281110,Concrete & Foundations,LOD 300,False,Planning
+PRJ-0043,Metropolitan Surgical Hospital Phase 3,Higher Education & Research Centers,"Seattle, WA",5000000,5.0,55560119,Structural Steel & Precast,LOD 300,False,Planning
+PRJ-0044,Cirrus Cloud Infrastructure Facility Phase 3,Healthcare (Hospitals & Clinics),"Phoenix, AZ",5000000,5.0,56021814,Fire Protection & Life Safety,LOD 400,False,Planning
+PRJ-0045,Olympus Biologics Plant Phase 3,Biopharmaceutical & Lab Facilities,"Seattle, WA",150000000,150.0,1415265648,HVAC & Mechanical,LOD 400,True,Planning
+PRJ-0046,BioNexus Therapeutics Lab Phase 4,Biopharmaceutical & Lab Facilities,"Denver, CO",18000000,18.0,171809018,Plumbing & Industrial Piping,LOD 400,True,Planning
+PRJ-0047,Skyline Health Pavilion Phase 4,Higher Education & Research Centers,"Denver, CO",18000000,18.0,183847341,Structural Steel & Precast,LOD 300,False,Planning
+PRJ-0048,HyperScale Data Center Alpha Phase 4,Commercial High-Rise & Corporate Campus,"Seattle, WA",85000000,85.0,866591562,Drywall & Framing,LOD 300,False,Planning
+PRJ-0049,NextGen Semiconductor Fab Phase 4,Higher Education & Research Centers,"Seattle, WA",85000000,85.0,834719991,Drywall & Framing,LOD 300,False,Planning
+PRJ-0050,Centennial Medical Center Phase 4,Advanced Technology (Data Centers & Semis),"Denver, CO",150000000,150.0,1400372910,Fire Protection & Life Safety,LOD 400,True,Planning
+PRJ-0051,Vertex Innovation Tower Phase 4,Advanced Technology (Data Centers & Semis),"Raleigh-Durham, NC",45000000,45.0,389374449,Building Automation & Controls,LOD 400,True,Planning
+PRJ-0052,Apex Life Sciences Hub Phase 4,Commercial High-Rise & Corporate Campus,"Raleigh-Durham, NC",18000000,18.0,215270082,Structural Steel & Precast,LOD 300,False,Planning
+PRJ-0053,Quantum Compute Facility Phase 4,Commercial High-Rise & Corporate Campus,"Austin, TX",5000000,5.0,44709309,Plumbing & Industrial Piping,LOD 300,False,Planning
+PRJ-0054,Horizon Cancer Research Center Phase 4,Biopharmaceutical & Lab Facilities,"Austin, TX",45000000,45.0,520184983,Building Automation & Controls,LOD 400,True,Planning
+PRJ-0055,Prism Corporate Campus Phase 4,Healthcare (Hospitals & Clinics),"Seattle, WA",45000000,45.0,525894564,HVAC & Mechanical,LOD 400,False,Planning
+PRJ-0056,St. Jude Outpatient Wing Phase 4,Advanced Technology (Data Centers & Semis),"Raleigh-Durham, NC",18000000,18.0,207868777,Structural Steel & Precast,LOD 400,True,Planning
+PRJ-0057,TerraWatt Battery Gigafactory Phase 4,Healthcare (Hospitals & Clinics),"Raleigh-Durham, NC",85000000,85.0,955003774,Cleanroom MEP & Process Piping,LOD 400,False,Planning
+PRJ-0058,Metropolitan Surgical Hospital Phase 4,Biopharmaceutical & Lab Facilities,"Seattle, WA",5000000,5.0,54622330,Electrical & Low Voltage,LOD 400,True,Planning
+PRJ-0059,Cirrus Cloud Infrastructure Facility Phase 4,Biopharmaceutical & Lab Facilities,"Denver, CO",18000000,18.0,207138557,Fire Protection & Life Safety,LOD 400,True,Planning
+PRJ-0060,Olympus Biologics Plant Phase 4,Biopharmaceutical & Lab Facilities,"Denver, CO",5000000,5.0,55077554,Building Automation & Controls,LOD 400,True,Planning

@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: dim_subcontractors
+    description: "Conformed dimension containing certified subcontractors, trade licenses, and safety ratings."
+    columns:
+      - name: subcontractor_id
+        description: "Primary key identifier for subcontractor (e.g. SUB-0001)."
+        tests:
+          - unique
+          - not_null
+      - name: safety_emr
+        description: "Experience Modification Rate. Industry standard <= 1.0."
+        tests:
+          - not_null
+      - name: safety_tier
+        description: "Classification into Tier 1 (Superior), Tier 2 (Standard), Tier 3 (High Risk)."
+        tests:
+          - accepted_values:
+              values: ['Tier 1 (Superior)', 'Tier 2 (Standard)', 'Tier 3 (High Risk)']
+
+  - name: dim_projects
+    description: "Conformed dimension containing commercial, healthcare, and mission-critical projects."
+    columns:
+      - name: project_id
+        description: "Primary key identifier for project (e.g. PRJ-0001)."
+        tests:
+          - unique
+          - not_null
+      - name: budget_usd
+        description: "Total budgeted capital expenditure in USD."
+        tests:
+          - not_null
+
+  - name: fct_evaluations
+    description: "Transactional fact table capturing post-job PM evaluations, ratings, and schedule adherence."
+    columns:
+      - name: evaluation_id
+        description: "Primary key for individual job review."
+        tests:
+          - unique
+          - not_null
+      - name: rating
+        description: "Project Manager overall score between 1.0 and 5.0."
+        tests:
+          - not_null
+
+  - name: features_recommender_mart
+    description: "ML Feature store table providing aggregated contractor features and Bayesian ratings."
+    columns:
+      - name: subcontractor_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: bayesian_rating
+        description: "Reputation score smoothed against cold start uncertainty."
+        tests:
+          - not_null
