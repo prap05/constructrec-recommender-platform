@@ -2,6 +2,7 @@
 ### End-to-End Data Engineering Pipeline, DBT Transformations, Hybrid Recommender, and Power BI Analytics
 
 > **Live Deployed:** https://constructrec-recommender-platform.onrender.com/ 
+
 > **Tech Stack:** Python 3, DuckDB / SQLite, DBT (Data Build Tool), Apache Airflow, Scikit-Learn, FastAPI, Flask, Power BI, Azure Data Factory & Snowflake Architecture.
 
 ---
