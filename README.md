@@ -1,8 +1,7 @@
 # ConstructRec: Enterprise Subcontractor & Resource Recommender Platform
 ### End-to-End Data Engineering Pipeline, DBT Transformations, Hybrid Recommender, and Power BI Analytics
 
-> **Tailored for Data Science Engineer / Data Engineer Interview at vConstruct (DPR Construction)**  
-> **Author:** Final Year B.E. / B.Tech (CS/IT)  
+> **Live Deployed:** https://constructrec-recommender-platform.onrender.com/ 
 > **Tech Stack:** Python 3, DuckDB / SQLite, DBT (Data Build Tool), Apache Airflow, Scikit-Learn, FastAPI, Flask, Power BI, Azure Data Factory & Snowflake Architecture.
 
 ---
